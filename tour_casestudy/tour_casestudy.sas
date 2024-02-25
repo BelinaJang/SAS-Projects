@@ -166,6 +166,7 @@ proc means data=tour.final_tourism mean min max maxdec=0;
 	where category="Arrivals";
 run;
 
+/* generate an overall mean for tourism expenditure in other countries */
 proc means data=tour.final_tourism mean maxdec=0;
 	var Y2014;
 	where category="Tourism expenditure in other countries - US$";
